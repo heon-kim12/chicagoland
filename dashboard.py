@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
-final_stats = pd.read_csv("final_stats_20miles_to_30miles.csv")
+final_stats = pd.read_csv("final_stats.csv")
 # -----------------------------------------------------
 # Dashboard Title and Description
 st.title("Home Purchase Recommendation Dashboard")
