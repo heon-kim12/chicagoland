@@ -35,7 +35,7 @@ recommended = final_stats[final_stats['mean_2025'] <= budget].sort_values(by='me
 st.subheader("Recommended Locations (Forecasted 2025 Prices)")
 if not recommended.empty:
     st.write(f"Based on your budget of ${budget:,.0f}, the following locations have forecasted average home prices below your budget:")
-    st.dataframe(recommended[['city', 'mean_2025', 'min_2025', 'max_2025']])
+    st.dataframe(recommended[['city', 'mean_2025']])
 else:
     st.write("No locations were found with forecasted average prices below your budget.")
 
